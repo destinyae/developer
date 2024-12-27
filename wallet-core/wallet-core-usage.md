@@ -60,7 +60,7 @@ let wallet = HDWallet(mnemonic: "ripple scissors kick mammal hire column oak aga
 
 | Input parameter | Description                                                                               |
 | --------------- | ----------------------------------------------------------------------------------------- |
-| _mnemonic_      | a.k.a. _recovery phrase_. The string of several words that was used to create the wallet. |
+| _mnemonic_      | a.k.a. _recovery phrase_. The string of several words was used to create the wallet. |
 | _passphrase_    | Optional passphrase, used to encrypt the seed.                                            |
 
 ## Account Address Derivation
@@ -78,7 +78,7 @@ For example, the default BTC address, derived for the wallet with the mnemonic s
 `bc1qpsp72plnsqe6e2dvtsetxtww2cz36ztmfxghpd`.
 For Ethereum, this is `0xA3Dcd899C0f3832DFDFed9479a9d828c6A4EB2A7`.
 
-Here is the sample code fort obtaining the default address for different coins:
+Here is the sample code for obtaining the default address for different coins:
 
 ```swift
 let addressBTC = wallet.getAddressForCoin(coin: .bitcoin)
